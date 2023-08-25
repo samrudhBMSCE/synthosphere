@@ -133,6 +133,33 @@ The ALU operation will take two clocks. The first clock cycle will be used to lo
      ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/7706025d-92f7-49ac-b2e8-4263ba17916d)
      ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/7a23861e-d591-4b75-88cc-11c0e458a643)
 
+  8. Dumping the netlist into a file - ```write_verilog -noattr netlist_CPUtop.v```
+
+
+# Gate Level Simulation (GLS)
+
+  ```$ iverilog netlist_CPUtop.v ../verilog_model/primitives.v ../verilog_model/sky130_fd_sc_hd_edited.v tb.v```
+  ```$ ./a.out```
+  ```gtkwave CPUtop.vcd```
+
+  ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/41b1c0b0-d035-4892-9717-7469c3a2d418)
+
+  ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/8b628b7c-f07a-4004-9f82-a1ae0531f492)
+
+  The GLS output window is in par with the RTL simulation output as observed above.
+
+# Optimization of the RTL
+
+   1. Booting Yosys: ``` yosys ```
+   2. Reading the library file: ``` >read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib ```
+   3. Reading the RTL file: ```>read_verilog SIMD.v ```
+   4. Optimization: ``` >opt -purge CPUtop```
+      
+      ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/90dd56cc-8415-4f3b-bf45-d8d5e374f1f5)
+
+
+  
+
 
 
 
