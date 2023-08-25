@@ -86,13 +86,45 @@ The ALU operation will take two clocks. The first clock cycle will be used to lo
 
     ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/0e6c525d-ff3d-421f-840c-958e5012e7ee)
 
-2. Simulating using gtkwave
+2. RTL simulation using gtkwave
    ```
-   gtkwave SIMD.vcd
+   $ gtkwave SIMD.vcd
    ```
    Waveform:
    
    ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/8b628b7c-f07a-4004-9f82-a1ae0531f492)
+
+# Synthesis using Yosys
+
+  1. Booting Yosys: ``` yosys ```
+  2. Reading the library file: ``` >read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib ```
+  3. Flatten command ```>flatten``` for ease of synthesis
+  4. Synthesizing the modules one by one:
+     
+     a. SIMDadd.v - ```>show SIMDadd```
+
+     ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/31b7883d-5baf-4042-bddb-839215bbb4d3)
+
+     b. SIMDmultiply.v - ```>show SIMDmultiply```
+
+     ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/45bb8886-7970-444d-817f-f5181eba0a92)
+
+     c. SIMDshifter.v - ```>show SIMDshifter```
+
+     ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/9bb346b5-aa38-45db-8293-a700e3a70a94)
+
+     d. Finally, the top module CPUtop.v - ```>show CPUtop```
+
+     ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/6b06a5a9-da92-4fed-9612-a63f3e2ac1f9)
+
+     Note: Since the processing power is limited in the Virtual Machine, the synthesis for the top module was done before declaration of CPUtop.v as the top module.
+
+     
+
+
+
+     
+
 
 
   
