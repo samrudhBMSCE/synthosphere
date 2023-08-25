@@ -66,6 +66,10 @@ The ALU operation will take two clocks. The first clock cycle will be used to lo
   ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/c4bb7a42-78c8-4566-9f0d-7fc07b89bfb3)
   ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/46fb08c9-290e-48a7-896a-b9e51093eac6)
 
+* RTL of all modules
+
+  
+
 
 
 
