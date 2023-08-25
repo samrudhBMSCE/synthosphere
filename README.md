@@ -1,6 +1,20 @@
 # Synthosphere
 
-Synthosphere is an RTL design and logic synthesis competition where the participants can design their own RTL code, test it by running it on iverilog and gtkwave,followed by synthesizing the code using the "Yosys Open Synthesis Suite" on ubuntu OS. The pre synthesis (gtkwave waverform) and the post synthesis (GLS/gate level netlist) are then compared to check for correctness of the logic synthesis.
+Synthosphere is an RTL design and logic synthesis competition where the participants can design their own RTL code, test it by running it on iverilog and gtkwave,followed by synthesizing the code using the "Yosys Open Synthesis Suite" on ubuntu OS. The pre synthesis (gtkwave waverform) and the post synthesis (GLS/gate level netlist) are then compared to check for correctness of the logic synthesis. Logic Optimization is also done to make the synthesis more efficient.
+
+# Quick Links
+
+* Files
+  1. [RTL Design Files](https://github.com/samrudhBMSCE/synthosphere/tree/main/Design%20Files)
+  2. [Test Bench File](https://github.com/samrudhBMSCE/synthosphere/tree/main/Test%20Bench)
+  3. [Netlists](https://github.com/samrudhBMSCE/synthosphere/tree/main/netlists)
+  4. [Gate Level Simulation](https://github.com/samrudhBMSCE/synthosphere/blob/main/README.md#gate-level-simulation-gls)
+  5. [Optimization](https://github.com/samrudhBMSCE/synthosphere/blob/main/README.md#optimization-of-the-rtl)
+
+* Navigation through the report
+  1. [Introduction to basic SIMD processor](https://github.com/samrudhBMSCE/synthosphere/blob/main/README.md#basic-simd-single-instructionmultiple-data-processor)
+  2. [RTL Files of all modules](https://github.com/samrudhBMSCE/synthosphere/blob/main/README.md#rtl-of-all-modules)
+  3. [Simulation using iverilog and gtkwave](https://github.com/samrudhBMSCE/synthosphere/blob/main/README.md#simulation-using-iverilog-and-gtkwave)
 
 # Basic SIMD (Single Instruction,Multiple Data) Processor
 
