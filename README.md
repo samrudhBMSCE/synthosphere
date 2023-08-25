@@ -68,6 +68,12 @@ The ALU operation will take two clocks. The first clock cycle will be used to lo
 
 * RTL of all modules
 
+  1. [CPUtop.v](https://github.com/samrudhBMSCE/synthosphere/blob/main/Design%20Files/CPUtop.v) : Top Module
+  2. [SIMDadd.v](https://github.com/samrudhBMSCE/synthosphere/blob/main/Design%20Files/SIMDadd.v) : SIMD Adder Module
+  3. [SIMDmultiply.v](https://github.com/samrudhBMSCE/synthosphere/blob/main/Design%20Files/SIMDmultiply.v) : SIMD Multiply Module
+  4. [SIMDshifter.v](https://github.com/samrudhBMSCE/synthosphere/blob/main/Design%20Files/SIMDshifter.v) SIMD Shifter Module
+  5. [processor_tb.v](https://github.com/samrudhBMSCE/synthosphere/blob/main/Test%20Bench/processor_tb.v) : Test Bench for top module
+
   
 
 
