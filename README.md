@@ -117,7 +117,35 @@ The ALU operation will take two clocks. The first clock cycle will be used to lo
 
      ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/6b06a5a9-da92-4fed-9612-a63f3e2ac1f9)
 
-     Note: Since the processing power is limited in the Virtual Machine, the synthesis for the top module was done before declaration of CPUtop.v as the top module.
+     Note: Since the processing power is limited in the Virtual Machine, the synthesis for the top module was done before declaration of CPUtop.v as the top module and 
+     synthesizing it.
+
+  5. Running the synthesis with CPUtop.v as the top module and printing the statistics - ```>synth -top CPUtop``` 
+     
+     ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/995d14ac-83e8-4a4f-a3fb-c2444fdc7936)
+
+  6. Mapping the flipflops to our design - ```>dfflibmap -liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+
+     ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/fc0c76b0-1c0f-47be-8f57-aeb9592b50ac)
+
+  7. Combining the logic to generate abc results - ```>abc -liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+     
+     ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/7706025d-92f7-49ac-b2e8-4263ba17916d)
+     ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/7a23861e-d591-4b75-88cc-11c0e458a643)
+
+
+
+
+   
+
+     
+
+
+     
+     
+ 
+
+     
 
      
 
