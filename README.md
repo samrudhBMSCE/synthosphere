@@ -66,13 +66,34 @@ The ALU operation will take two clocks. The first clock cycle will be used to lo
   ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/c4bb7a42-78c8-4566-9f0d-7fc07b89bfb3)
   ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/46fb08c9-290e-48a7-896a-b9e51093eac6)
 
-* RTL of all modules
+# RTL of all modules
 
   1. [CPUtop.v](https://github.com/samrudhBMSCE/synthosphere/blob/main/Design%20Files/CPUtop.v) : Top Module
   2. [SIMDadd.v](https://github.com/samrudhBMSCE/synthosphere/blob/main/Design%20Files/SIMDadd.v) : SIMD Adder Module
   3. [SIMDmultiply.v](https://github.com/samrudhBMSCE/synthosphere/blob/main/Design%20Files/SIMDmultiply.v) : SIMD Multiply Module
   4. [SIMDshifter.v](https://github.com/samrudhBMSCE/synthosphere/blob/main/Design%20Files/SIMDshifter.v) SIMD Shifter Module
   5. [processor_tb.v](https://github.com/samrudhBMSCE/synthosphere/blob/main/Test%20Bench/processor_tb.v) : Test Bench for top module
+
+# Simulation using iverilog and gtkwave
+
+  * Codelines on ubuntu terminal:
+1. Running the .v files on iverilog
+   ```
+    $ iverilog SIMD.v tb.v
+    $ ./a.out
+    ```
+    Sample Output:
+
+    ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/0e6c525d-ff3d-421f-840c-958e5012e7ee)
+
+2. Simulating using gtkwave
+   ```
+   gtkwave SIMD.vcd
+   ```
+   Waveform:
+   
+   ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/8b628b7c-f07a-4004-9f82-a1ae0531f492)
+
 
   
 
