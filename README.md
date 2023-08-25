@@ -162,7 +162,7 @@ The ALU operation will take two clocks. The first clock cycle will be used to lo
 
   The GLS output window is in par with the RTL simulation output as observed above.
 
-# Optimization of the RTL
+# Optimization
 
    1. Booting Yosys: ``` yosys ```
    2. Reading the library file: ``` >read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib ```
