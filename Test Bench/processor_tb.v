@@ -190,6 +190,10 @@ begin
   rst         = 1'b1;
   #(2*CLK_PERIOD) rst = 1'b0;
 end
+initial begin 
+  $dumpfile("SIMD.vcd");
+  $dumpvars(1);
+end
 
 // ----------------------------------
 // Output monitor
