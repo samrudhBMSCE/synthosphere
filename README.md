@@ -148,7 +148,7 @@ The ALU operation will take two clocks. The first clock cycle will be used to lo
 
      ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/fc0c76b0-1c0f-47be-8f57-aeb9592b50ac)
 
-  8. Combining the logic to generate abc results - ```>abc -liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+  8. Combining the logic to generate abc results - ```>abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
      
      ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/7706025d-92f7-49ac-b2e8-4263ba17916d)
      ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/7a23861e-d591-4b75-88cc-11c0e458a643)
