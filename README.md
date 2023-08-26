@@ -115,8 +115,9 @@ The ALU operation will take two clocks. The first clock cycle will be used to lo
 
   1. Booting Yosys: ``` yosys ```
   2. Reading the library file: ``` >read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib ```
-  3. Flatten command ```>flatten``` for ease of synthesis
-  4. Synthesizing the modules one by one:
+  3. Instantiating the RTL file on yosys" ```>read_verilog SIMD.v```
+  4. Flatten command ```>flatten``` for ease of synthesis
+  5. Synthesizing the modules one by one:
      
      a. SIMDadd.v - ```>show SIMDadd```
 
