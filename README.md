@@ -15,8 +15,9 @@ Synthosphere is an RTL design and logic synthesis competition where the particip
   1. [Introduction to basic SIMD processor](https://github.com/samrudhBMSCE/synthosphere/blob/main/README.md#basic-simd-single-instructionmultiple-data-processor)
   2. [RTL Files of all modules](https://github.com/samrudhBMSCE/synthosphere/blob/main/README.md#rtl-of-all-modules)
   3. [Simulation using iverilog and gtkwave](https://github.com/samrudhBMSCE/synthosphere/blob/main/README.md#simulation-using-iverilog-and-gtkwave)
-  4. [Gate Level Simulation](https://github.com/samrudhBMSCE/synthosphere/blob/main/README.md#gate-level-simulation-gls)
-  5. [Optimization](https://github.com/samrudhBMSCE/synthosphere/blob/main/README.md#optimization-of-the-rtl)
+  4. [Synthesis using Yosys](https://github.com/samrudhBMSCE/synthosphere/tree/main#synthesis-using-yosys)
+  5. [Gate Level Simulation](https://github.com/samrudhBMSCE/synthosphere/blob/main/README.md#gate-level-simulation-gls)
+  6. [Optimization](https://github.com/samrudhBMSCE/synthosphere/blob/main/README.md#optimization-of-the-rtl)
 
 # Basic SIMD (Single Instruction,Multiple Data) Processor
 
