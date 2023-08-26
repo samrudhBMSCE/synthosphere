@@ -144,7 +144,7 @@ The ALU operation will take two clocks. The first clock cycle will be used to lo
      
      ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/995d14ac-83e8-4a4f-a3fb-c2444fdc7936)
 
-  7. Mapping the flipflops to our design - ```>dfflibmap -liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+  7. Mapping the flipflops to our design - ```>dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
 
      ![image](https://github.com/samrudhBMSCE/synthosphere/assets/143097746/fc0c76b0-1c0f-47be-8f57-aeb9592b50ac)
 
