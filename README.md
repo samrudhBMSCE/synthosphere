@@ -18,7 +18,7 @@ Synthosphere is an RTL design and logic synthesis competition where the particip
 
 # Basic SIMD (Single Instruction,Multiple Data) Processor
 
-The RTL code describes a basic SIMD processor with a pipeline architecture that processes instructions in multiple stages,each represented by a specific state. It performs arithmetic,logic and memory operations based on instructions with the help of the core - which is a 16-bit SIMD ALU which performs 2's complement calculations. The pipelined architecture allows for efficient execution of multiple instructions in parellel stages, enhancing the processor's throughput.
+The RTL code describes a basic SIMD processor with a pipeline architecture that processes instructions in multiple stages,each represented by a specific state. It performs arithmetic,logic and memory operations based on instructions with the help of the core - which is a 16-bit SIMD ALU which performs 2's complement calculations. The pipelined architecture allows for efficient execution of same operation on multiple data points simultaneously in parellel stages, enhancing the processor's throughput.
 The ALU operation will take two clocks. The first clock cycle will be used to load values into the registers. The second will be for performing the operations. 6-bit opcodes are used to select the functions. The instruction code including the opcode will be 18-bits.
 * Architecture
   
